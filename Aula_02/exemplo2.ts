@@ -3,19 +3,26 @@ namespace exemplo2 {
     console.log(vetor);
     for (let i = 0; i < vetor.length; i++) {
         console.log(vetor[i]);
-        soma(vetor[i], vetor[i])
+        
     }
     // pop, push, shift, unshift
 
-    function soma(a: number, b: number){
+    let resultadoSoma: number[] = []
+    for(let i = 0; i < vetor.length; i++){
+        if(i == vetor.length - 1){
+            resultadoSoma.push(Soma(vetor[i],vetor[0]))
+        } else {
+            resultadoSoma.push(Soma(vetor[i],vetor[i+1]))
+        }
+
+    }
+
+    console.log(resultadoSoma);
+}
+
+    function Soma(a: number, b: number){
         let result: number = a + b
         return result
-        console.log(result);
-    }
-
-    let newVetor: number[] = []
-    for(let j = 0; j < vetor.length; j++){
 
     }
-    
-}
+
