@@ -7,6 +7,10 @@ export default function AulaComp(){
                 titulo="Meu primeiro componente"
                 subtitulo="Estamos aprendendo NEXT.js com REACT"
             />
+
+            <ValidaCPF
+                cpf=
+            />
         </>
     )
 }
