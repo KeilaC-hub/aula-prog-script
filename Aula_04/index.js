@@ -22,10 +22,10 @@ app.get("/getSabores", (req, res) => {
 })
 
 // UPDATE
-app.patch("patchPreco", (req, res) => {
+app.patch("/patchPreco", (req, res) => {
 
 })
 // DELETE
-app.delete("deleteSabor", (req, res) = {
-    
+app.delete("/deleteSabor", (req, res) = {
+
 })
